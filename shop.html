@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOLL HOUSE</title>
+  <link rel="icon" href="img/faccinaTOP.ico" type="image/x-icon">
+  <meta charset="utf-8"> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+  background-color: black;
+}
+    .header {
+      background-color: black;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+    
+    }
+    
+    .logo {
+      width: 280px;
+      height: auto;
+      align-items: left;
+    }
+
+      .left-align {
+  float: left;
+  margin-right: 10px; /* Opzionale: aggiunge un margine destro per separare il contenuto adiacente */
+  margin-bottom: 10px; /* Opzionale: aggiunge un margine inferiore per separare il contenuto sottostante */
+}
+
+    
+    
+    .menu-toggle {
+      color:#851064;
+      font-size: 40px;
+      cursor: pointer;
+      position: sticky;
+    
+    }
+  
+    
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu.open .menu-items {
+      display: flex;
+    }
+    
+    .menu-items li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    
+    .menu-items a {
+      color: #851064;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold; 
+    }
+   
+    .footer {
+      background-color: #440147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+
+    
+    nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+h1 {
+      color: #851064; /* Colore viola */
+      font-size: 30px; /* Dimensione del carattere */
+      font-weight: 600; /* Carattere in grassetto */
+      margin-left: 20px;
+    }
+ /* Stile per il contenitore principale */
+ .product-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap; /* Per andare su più righe su schermi stretti */
+    }
+
+    /* Stile per i quadrati dei prodotti */
+      .product-square {
+  width: 385px;
+  background-color: black;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom right, #851064, #440147) 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap; /* Per andare su più righe su schermi stretti */
+}
+  
+
+    /* Stile per le immagini dei prodotti */
+    .product-image {
+      width: 300px;
+      max-height: 200px;
+      object-fit: scale-down;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      height: 250px;
+      margin: 10px;
+      padding: 20px;
+      background: linear-gradient(to bottom, black, black); /* Sfondo sfumato */
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombra interna */
+      border-radius: 10px;
+      transition: transform 0.3s;
+
+    }
+
+    /* Stile per la descrizione dei prodotti */
+    .product-description {
+      text-align: left;
+      margin-top: 5px; /* Aggiorna il margine superiore */
+  margin-bottom: 5px; /* Aggiorna il margine inferiore */
+  color:  #851064;
+}
+
+    .product-image:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Ombra esterna quando passi con il mouse sopra */
+    }
+
+.product-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #851064;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      margin-top: 10px;
+      transition: transform 0.3s;
+
+    }
+
+    .product-button:hover {
+      transform: scale(1.1);
+    }
+    
+    .product-button:hover span {
+      font-size: 20px;
+    }
+
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s;
+    }
+
+    .popup-overlay.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup-content {
+      position: relative;
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    .popup-image {
+      width: 100%;
+      height: auto;
+    }
+ </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
+
+    function togglePopup() {
+      var popup = document.getElementById("popup-overlay");
+      popup.classList.toggle("show");
+    }
+
+  </script>
+</head>
+<body>
+  <header class="header">
+
+    <a href="home.html">
+    <img class="logo" class="left-align" src="img/logo2.png" alt="Logo" >
+    </a>
+
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu-items">
+        <li><a class="active nounderline" href="home.html">HOME</a></li>
+        <li><a class="whitelink nounderline" href="eventi2.html">EVENTI</a></li>
+        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
+        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+  <h1>DOLL HOUSE SHOP</h1>
+  <div class="product-container">
+    <div class="product-square">
+     
+        <img src="immaginI/maglietta.jpeg" alt="maglietta" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h3>T-SHIRT</h3>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/maglietta.jpeg" alt="Popup Image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="product-square">
+ 
+        <img src="immagini/felpa.png" alt="felpa" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h3>HOODIE</h3>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/felpa.png" alt="Popup Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-square">
+      
+        <img src="immagini/maglietta.jpeg" alt="ventaglio" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h3>VENTAGLIO</h3>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/ventaglio.PNG" alt="Popup Image">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-container">
+    <div class="product-square">
+     
+        <img src="immaginI/maglietta.jpeg" alt="maglietta" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h4>T-SHIRT</h4>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/maglietta.jpeg" alt="Popup Image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="product-square">
+ 
+        <img src="immagini/felpa.png" alt="felpa" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h4>HOODIE</h4>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/felpa.png" alt="Popup Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-square">
+      
+        <img src="immagini/maglietta.jpeg" alt="ventaglio" class="product-image" onclick="togglePopup()">
+      </a>
+      <div class="product-description">
+        <h4>VENTAGLIO</h4>
+        <p>T-shirt manica corta da uomo - Gildan GN180
+          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+          Stile: vestibilità regolare.
+          Scollo: rotondo.</p>
+        <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
+        <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
+          <div class="popup-content">
+            <img class="popup-image" src="immagini/ventaglio.PNG" alt="Popup Image">
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+          <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+          <nav>
+            <ul>
+            
+              <li><a href="documentazione.html">Documentazione</a></li>
+  </footer>
+ 
+
+</body>
+
+</html>

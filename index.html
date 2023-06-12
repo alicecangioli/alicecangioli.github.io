@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>DOLLHOUSE</title>
+
+  <link rel="icon" href="img/faccina.ico" type="image/x-icon">
+
+  <meta charset="utf-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    
+    @media (max-width: 768px) {
+  /* Stili per schermi fino a 768px di larghezza */
+}
+
+@media (max-width: 480px) {
+  /* Stili per schermi fino a 480px di larghezza */
+}
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+  background-color: black;
+}
+    .header {
+      background-color: black;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+
+    }
+
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+
+    .menu-toggle {
+      color:#851064;
+      font-size: 40px;
+      cursor: pointer;
+      position: relative;
+
+    }
+
+
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu.open .menu-items {
+      display: flex;
+    }
+
+    .menu-items li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .menu-items a {
+      color: #851064;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold; 
+    }
+
+    .gif-content {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .overlay-text {
+  position: absolute;
+  top: 65%;
+  right: 290px; 
+  transform: translateY(-50%);
+  font-size: 70px;
+  font-weight: bold; 
+  color: rgba(168, 9, 149, 0.8); 
+  width: 200px; 
+
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(168, 9, 149, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+
+.text-section {
+  width: 70%;
+  padding: 0 20px;
+}
+
+.text-section h2 {
+  font-size: 50px;
+}
+
+.text-section p {
+  font-size: 23px;
+}
+
+.image-section {
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    .footer {
+      background-color: purple;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+ </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
+
+
+
+  </script>
+</head>
+<body>
+  <header class="header">
+
+    <a href="home.html">
+      <img class="logo" class="left-align" src="img/logo2.png" alt="Logo" >
+      </a>
+
+
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu-items">
+        <li><a class="active nounderline" href="home.html">HOME</a></li>
+        <li><a class="whitelink nounderline" href="eventi2.html">EVENTI</a></li>
+        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
+        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <img class="gif-content" src="img/gif_AdobeExpress.gif" alt="GIF">
+    <h1 class="overlay-text">PLAY TECHNO AT MY FUNERAL</h1>
+  </div>
+
+  <section class="content-section">
+    <div class="text-section">
+      <h2>DOLLHOUSE CONCEPT</h2>
+     
+
+       <p>DOLLHOUSE nasce dalla voglia di ballare, di muoversi al ritmo di bpm alti, nasce per offrire un’esperienza che vada oltre alla classica “serata in discoteca”.</p>
+        <p>Si distingue in tutto, nell’atmosfera unica, nell’attenzione nella scelta musicale, nella ricercatezza dell’estetica.
+        I capisaldi della nostra mentalità sono l’inclusività, la libertà espressiva, educazione nei confronti degli altri e del luogo dove ci troviamo, la partecipazione entusiasta (da parte nostra come da parte vostra) all’esperienza che noi vi offriamo e voi vivete.</p>
+        
+       <p>In un panorama culturale dove la techno sembra collegata irrimediabilmente al mondo della droga, del degrado sociale, dell’illegalità, siamo qui per eliminare questo strato superficiale ed erroneo di credenze, per mettere in primo piano un genere musicale straordinario, e mettere a disposizione un luogo speciale per goderselo.</p>
+        
+        <P>DOLLHOUSE è la nostra casa delle bambole, dove ci divertiamo come quando eravamo piccoli, riviviamo quella magia, all’interno della quale balliamo come se nessuno ci stesse guardando, ci sentiamo al sicuro, liberi di essere noi stessi.</P>
+        
+        <p>Musicalmente, ogni serata è curata con attenzione, seguendo una selezione musicale che abbraccia diverse sfumature della techno, dal deep al melodic, del techno progressivo al techno industriale. L’obiettivo è creare una programmazione variegate e coinvolgente, capace di soddisfare ogni gusto. </p>
+    
+        <style>
+          section {
+            padding-bottom: 10%;
+          }
+        </style>
+      </div>
+
+    <div class="image-section">
+      <img src="img/faccina.jpeg" alt="FACCINA LOGO">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+    <nav>
+      <ul>
+
+        <li><a href="documentazione.html">Documentazione</a></li>
+  </footer>
+
+</body>
+</html>

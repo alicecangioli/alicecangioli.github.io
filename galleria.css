@@ -1,0 +1,311 @@
+h1 {
+  font-size: 450%;
+  color: #514e50;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+background-color: black;
+}
+
+  .header {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+
+  }
+
+  .logo {
+    width: 280px;
+    height: auto;
+  }
+
+  /* MENU NUOVO */
+
+.menu-toggle {
+  color:#851064;
+  font-size: 40px;
+  cursor: pointer;
+  position: sticky;
+}
+
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.menu.open .menu-items {
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.menu-items a {
+  color: #851064;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+
+.content-section {
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(168, 9, 149, 0.8);
+width: 100%;
+height: 100vh;
+}
+
+.text-section {
+width: 70%;
+padding: 0 20px;
+}
+
+.text-section h2 {
+font-size: 50px;
+}
+
+.text-section p {
+font-size: 23px;
+}
+
+.image-section {
+width: 50%;
+padding: 0 20px;
+text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+/* Stili per schermi fino a 768px di larghezza */
+}
+
+@media (max-width: 480px) {
+/* Stili per schermi fino a 480px di larghezza */
+}
+
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+
+
+  
+ /* MENU NUOVO */
+
+.content-section {
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(168, 9, 149, 0.8);
+width: 100%;
+height: 100vh;
+}
+
+.text-section {
+    width: 70%;
+    padding: 0 20px;
+    }
+
+
+  h3 {
+    font-size: 400%;
+    text-align: left;
+    color: #851064;
+  }
+
+
+  .text-section h2 {
+    font-size: 50px;
+    }
+    
+
+.text-section p {
+font-size: 23px;
+}
+
+.image-section {
+  display: flex
+}
+
+
+
+.image-section {
+width: 100%;
+padding: 0 20px;
+text-align: center;
+}
+
+.image-section img {
+max-width: 100%;
+height: auto;
+}
+
+ 
+
+.section {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0%;
+}
+
+.line {
+  height: 1px;
+  background-color: #ffffff;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 240%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+ 
+}
+
+
+
+
+.container {
+  padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section {
+    height: 300px; /* Altezza fissa della sezione */
+  width: 100%;
+    padding: 20px;
+    border-bottom: 0px solid #ccc;
+}
+
+.section:last-child {
+    height: 300px; /* Altezza fissa della sezione */
+  width: 100%;
+    border-bottom: none;
+  }
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+
+
+
+  .footer {
+    max-width: 100%;
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+nav ul li a {
+color: #000;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+color: #ffffff; /* Cambia il colore al passaggio del mouse */
+font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+
+@media (max-width: 768px) {
+  /* Stili per schermi fino a 768px di larghezza */
+}
+
+@media (max-width: 480px) {
+  /* Stili per schermi fino a 480px di larghezza */
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer {
+text-align: center;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center !important;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  max-width: 100%;
+  width: 10px;
+  height: 10px;
+  font-size: 24px;
+  color: #000;
+  text-align: center !important;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color:#3b1d32;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #333;
+  color: #fff;
+}
+/*FOOTER*/
