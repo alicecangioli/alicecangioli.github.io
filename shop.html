@@ -20,6 +20,26 @@
   <meta charset="utf-8"> 
   <style>
 
+#map {
+      width: 100%;
+  height: auto;  
+    }
+  
+  @media (max-width: 768px) {
+    #map {
+      width: 100%;
+      height: 200px;
+    }
+    
+    @media (min-width: 769px) {
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  
+  }
+
 h1 {
       color: #851064; /* Colore viola */
       font-size: 50px; /* Dimensione del carattere */
@@ -31,6 +51,14 @@ h1 {
       font-family: Impact, Charcoal, sans-serif;
     
     }
+
+    .h3 {
+      font-family: Impact, Charcoal, sans-serif;
+      color: #851064;
+    }
+
+   
+
 
     body {
       background-image: url("img/doll\ house\ scesa\ definita.svg");
@@ -107,13 +135,30 @@ h1 {
       font-size: 30px;
       font-weight: bold; 
     }
+
+    @media (max-width: 768px) {
+  /* Stili per schermi fino a 480px di larghezza */
+}
+
+    @media (max-width: 480px) {
+  /* Stili per schermi fino a 480px di larghezza */
+}
+
+@media screen and (max-width: 768px) 
+{}
+
    
     .footer {
       background-color: #440147;
       color: white;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
-      width: 100%;
+      max-width: 100%;
+    }
+
+    .footer {
+      text-align: center;
+      color: #fff;
     }
 
 
@@ -152,7 +197,7 @@ nav ul li a:hover {
   width: 385px;
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid;
-  border-image: linear-gradient(to bottom right, #310826, #440147) 1;
+  border-image: linear-gradient(to bottom right, #ffffff, #ffffff) 1;
   padding: 20px;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -184,7 +229,7 @@ nav ul li a:hover {
       text-align: left;
       margin-top: 5px; /* Aggiorna il margine superiore */
   margin-bottom: 5px; /* Aggiorna il margine inferiore */
-  color:  #851064;
+  color:  #ffffff;
 }
 
     .product-image:hover {
@@ -269,6 +314,9 @@ nav ul li a:hover {
     color: rgb(179, 0, 255); /* Esempio: cambio colore in rosso */
   }
 
+  .section {
+    padding-bottom: 50px;
+  }
 
  </style>
   <script>
@@ -307,14 +355,14 @@ nav ul li a:hover {
   </header>
   <h1>DOLLHOUSE SHOP</h1>
 
-
+<section class="section">
   <div class="product-container">
     <div class="product-square">
      
         <img src="img/maglietta1.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>T-SHIRT COME PLAY WITH US</h3>
+        <h3 class="h3">T-SHIRT COME PLAY WITH US</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "Come play with us", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -336,7 +384,7 @@ nav ul li a:hover {
         <img src="img/maglietta2.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>T-SHIRT THINKING ABOUT YOU</h3>
+        <h3 class="h3"> T-SHIRT THINKING ABOUT YOU</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "Thinking about you", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -355,7 +403,7 @@ nav ul li a:hover {
         <img src="img/maglietta3.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>T-SHIRT DEMONS</h3>
+        <h3 class="h3">T-SHIRT DEMONS</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "Dance with your demons", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -368,13 +416,16 @@ nav ul li a:hover {
       </div>
     </div>
   </div>
+
   <div class="product-container">
+  </div>
+
     <div class="product-square">
      
         <img src="img/maglietta4.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>T-SHIRT VOODOO DOLLS</h4>
+        <h3 class="h3">T-SHIRT VOODOO DOLLS</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "Too many people not enough voodoo dolls", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -396,7 +447,7 @@ nav ul li a:hover {
         <img src="img/maglietta5.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>T-SHIRT FUNERAL</h4>
+        <h3 class="h3">T-SHIRT FUNERAL</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "Play techno at my funeral", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -415,7 +466,7 @@ nav ul li a:hover {
         <img src="img/maglietta6.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>T-SHIRT LITTLE PARTY</h4>
+        <h3 class="h3">T-SHIRT LITTLE PARTY</h3>
         <p>T-shirt manica corta UNISEX. Scritta posteriore "A little party never killed nobody", logo nella parte anteriore.
           Composizione: 100% cotone.
           Stile: vestibilità regolare.
@@ -429,9 +480,11 @@ nav ul li a:hover {
     </div>
   </div>
 
-
+</div class="product-container">
+</section>
   
- <div>
+ 
+  <div>
     <footer class="footer">
       <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
       <nav>
@@ -443,24 +496,32 @@ nav ul li a:hover {
   
         <ul class="social-links">
           <li><a href="https://www.facebook.com/tuapagina"><i class="fa-brands fa-facebook-f social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
-
+  
           <a href="https://www.tiktok.com/@club.dollhouse?_t=8d3O1FRiDsZ&_r=1" target="_blank"> <i class="fa-brands fa-tiktok social-icon" style="font-size: 27px; color: #fff;"></i></i></a>
-
+  
           <li><a href="https://instagram.com/club.dollhouse?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
         </ul>
-
+  
   
          
   
           
   
           <ul>
-         <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <li><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </li> 
         </ul>
   
+        <style>
+          #map {
+  width: 100%;
+  height: auto;
+  }
+        </style>
+  
+  
     </footer>
-</div>
+  </div>
  
 
 </body>

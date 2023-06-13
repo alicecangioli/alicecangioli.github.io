@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -50,6 +49,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 25px;
+    
 
 }
 
@@ -60,8 +60,12 @@ body {
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
-      font-family: 'Roboto', sans-serif
+      font-family: 'Roboto', sans-serif;
+      max-width: 100%;
+  
+  
     }
+
 
 .logo {
     width: 280px;
@@ -111,15 +115,18 @@ justify-content: center;
 color: rgba(0, 0, 0, 0.8);
 width: 100%;
 height: 100vh;
+overflow: hidden;
 }
 
 .text-section {
   width: 70%;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .text-section h2 {
   font-size: 50px;
+
 }
 
 .text-section p {
@@ -178,19 +185,22 @@ nav ul li {
 
 /*1 */
 .container {
-    overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
     background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-    width: 100%;
+
     height: 40%;
     padding: 20px;
+   
+   
  
   }
 
   .container img {
     float: left !important; /* Fa galleggiare l'immagine a sinistra */
     margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+    overflow: auto;
   }
 
   .container button {
@@ -234,20 +244,22 @@ nav ul li {
   /*2 */
   .container2 {
     margin-bottom: 20px;
-    overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
     background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-    width: 100%;
+   
     height: 40%;
     padding: 20px;
-
+ 
+   
   }
   
   
   .container2 img {
     float: right !important; /* Fa galleggiare l'immagine a DESTRA */
     margin-left: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+    overflow: hidden;
 
   }
 
@@ -255,19 +267,20 @@ nav ul li {
   
   /*3 */
 .container3 {
-  overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+  overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
     background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-    width: 100%;
     height: 40%;
     padding: 20px;
+
  
   }
   
   .container3 img {
     float: left !important; /* Fa galleggiare l'immagine a sinistra */
     margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+    overflow: auto;
    
   }
   
@@ -302,7 +315,6 @@ nav ul li {
       color: white;
       padding: 20px;
       text-align: center;
-      width: 100%;
     }
 
   </style>
@@ -462,6 +474,12 @@ nav ul li {
 
 </div>
 
+</body>
+</html>
+  </div>
+
+
+
 
 
 <div>
@@ -488,9 +506,17 @@ nav ul li {
         
 
         <ul>
-       <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <li><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </li> 
       </ul>
+
+      <style>
+        #map {
+width: 100%;
+height: auto;
+}
+      </style>
+
 
   </footer>
 </div>

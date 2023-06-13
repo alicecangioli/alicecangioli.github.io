@@ -29,15 +29,16 @@ h1 {
       font-weight: 600; /* Carattere in grassetto */
       margin-left: 20px;
       text-align: center;
-      padding-top: 10PX;
-      padding-bottom: 40PX ;
+      padding-top: -40PX;
+      padding-bottom: 30PX ;
       font-family: Impact, Charcoal, sans-serif;
+      margin-top: -10px;
     
     }
 
 .section {
 
-padding-top: 50px;
+padding-top: 10px;
 padding-left: 30px;
 padding-right: 30px;
 padding-bottom: 10px;
@@ -47,6 +48,7 @@ padding-bottom: 10px;
 h2 {
   font-size: 450%;
   color: #514e50;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 
@@ -68,20 +70,29 @@ h2 {
     body {
       color: white;
   background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
 }
 
 .h3 {
   font-size: 35px;
-  color: #851064
+  color: #851064;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 .h4 {
   font-size: 30px;
   color: #873c71;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 .p {
   line-height: 1.5;
+  
+   padding-top: 30px;
+  padding-bottom: 10px; /* Aggiunge uno spazio sotto il paragrafo */
+   font-family: 'Roboto', sans-serif;
+ 
 }
 
 .image-section {
@@ -206,6 +217,62 @@ nav ul li a:hover {
   color: #ffffff; /* Cambia il colore al passaggio del mouse */
   font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
 }
+
+
+
+
+
+.container1 {
+    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+    text-align: left; /* Centra orizzontalmente */
+    margin-bottom: 60px !important;
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    width: 80%;
+    margin: auto;
+    height: 30%;
+    padding: 20px;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: center;
+
+  }
+
+
+  .container2 {
+    margin-top: 20px;
+    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+    text-align: left; /* Centra orizzontalmente */
+    margin-bottom: 60px !important;
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    width: 80%;
+    margin: auto;
+    height: 30%;
+    padding: 20px;
+    max-width: 100%;
+  
+  }
+
+
+  .container3 {
+    margin-top: 20px;
+  overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+    text-align: left; /* Centra orizzontalmente */
+    margin-bottom: 60px !important;
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    width: 80%;
+    margin:auto;
+    height: 30%;
+    padding: 20px;
+ max-width: 100%;
+  }
+
+
+
+
+
+
+
  </style>
   <script>
     function toggleMenu() {
@@ -253,18 +320,28 @@ nav ul li a:hover {
 
 <text-section class="text-section" id="text-section">
 
+
+
+
+  <div class="container1">
 <section class="section">
 
 <h3 class="h3">ABSTRACT</h3>
 <p class="P">Il sito del locale DOLLHOUSE ha come obbiettivi principali quelli di aumentare la visibilità online, fornire informazioni chiare e dettagliate alla clientela e promuovere gli eventi.
 Il target principale sono le ragazze e i ragazzi dai 18 ai 30 anni, appassionati del genere musicale techno, alla ricerca di un locale stravagante e unico dove partecipare a serate di qualità.
-Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che mette a disposizione, come la galleria fotografica, l'acquisto diretto ai ticket degli eveneti e lo shop del merchandising.
+Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che mette a disposizione, come la galleria fotografica, l'acquisto diretto a i ticket degli eventi e lo shop del merchandising.
 
 </p>
 
 </section>
+  </div>
 
-<section class="section">
+
+
+
+
+  <div class="container2">
+  <section class="section">
 
 <p>
 <h3 class="h3">PROJECT MANAGEMENT PLAN</h3>
@@ -278,7 +355,7 @@ Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che met
   </p>
 
   <p>1.2 TARGET UTENTE</p>
-  <p class="P">Il target a cui è maggiormente consigliata l'utenza del locale va dai 18 anni, essendo una discoteca vietata ai minori, ai 30, in quanto il genere musicale techno attrae da sempre anche percose più adulte rispetto alle classiche discoteche da adolecsenti. Dollhouse si rispecchia negli ideali di inclusività e accoglienza, e ripudia ogni genere di discriminazione.</p>
+  <p class="P">Il target a cui è maggiormente consigliata l'utenza del locale va dai 18 anni, essendo una discoteca vietata ai minori, ai 30, in quanto il genere musicale techno attrae da sempre anche persone più adulte rispetto alle classiche discoteche da adolescenti. Dollhouse si rispecchia negli ideali di inclusività e accoglienza, e ripudia ogni genere di discriminazione.</p>
 
   <p>1.3 COMPETITORS</p>
   <p class="P">Come competitors abbiamo analizzato altre tre discoteche situate a Bologna. La prima, con la nomea di essere la discoteca più popolare della scena Bolognese, è il Matis, ma questa non possiede un vero e proprio sito, si limita a comunicare tramite le pagine social, come Instagram e Facebook. 
@@ -287,21 +364,36 @@ Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che met
   </P>
    </p>
 
+ 
+ 
+
 <p>
   <h4 class="h4"> 2. Struttura e layout </h4>
   <p>2.1 ARCHITETTURA DEL SITO </p>
 
-  <p class="P"> <img src="img/DIAGRAMMA.svg" style="width: 500px; max-width: 100%;">
+  <p class="P"> <img src="img/DIAGRAMMA.svg" alt="immagine architettura sito" style="width: 500px; max-width: 100%;">
   </p>
 
   <p>2.2 WIREFRAME</p>
-  <p class="P">FOTO PAG SCHEMA.</p>
+  <p class="P">
+    <img src="img-docu/docu1.svg" lt="immagine architettura sito" style="width: 500px; max-width: 100%;">
 
-  <p>3.2 LOOK AND FEEL</p>
+  </p>
+
+  <p class="P">
+    <img src="img-docu/docu2svg.svg" lt="immagine architettura sito" style="width: 500px; max-width: 100%;">
+
+  </p>
+
+
+
+
+  <p>2.3 LOOK AND FEEL</p>
   <p class="P">Trattandosi di un sito web creato per una discoteca techno abbiamo scelto come palette di colori il viola, magenta, il lilla e il nero (#BD319E, #522870, #9F6AC4, rgb 0,0,0) essendo dei colori audaci che ricordano le luci della discoteca. 
     Le immagini utilizzate mostrano alla clientela l'energia e il mood del locale. 
     I font utilizzati sono stati Charcoal, Roboto e Beas Neue, tutti molto leggibili, chiari e di impatto. </p>
    </p>
+
 
 <p>
   <h4 class="h4">3. Linguaggi e strumenti</h4>
@@ -311,37 +403,42 @@ Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che met
 <p>3.2 STRUMENTI TECNOLOGICI UTILIZZATI</p>
 <p>- Visual Studio Code come text editor</p>
 <p>- Photoshop per l'editing delle immagini e la creazione dei loghi</p>
-<p> Canva per la creazione dei loghi e le locandine</p>
-<p>- Adobe Colour per la palette di coloru</p>
+<p>- Canva per la creazione dei loghi e le locandine</p>
+<p>- Adobe Color per la palette di colori</p>
 <p>- Procreate per la realizzazione del diagramma ad albero e del wireframe</p>
 <p>- Github per la pubblicazione del sito</p>
 <p>- Google Analytics per il monitoraggio delle visualizzazioni del sito</p>
 
 </section>
 
+</div>
 
+</section>
+
+
+<div class="container3">
 
 <section class="section">
 
 <p>
   <h3 class="h3">COMMUNICATION STRATEGY</h3>
   <p> 1. BACKGROUND</p>
-  <P class="P">Tra le tante discoteche, di Bologna e non, anche alcune delle pù celebri non possiedono un sito web, o comunque questo non si presenta molto curato o manca di alcuni servizi. I locali, infatti, sembrano utilizzare quasi esclusivamente le loro pagine social per quanto riguarda la promozione degli eventi e la comunicazione verso la clientela. Per questo motivo abbiamo deciso di creare un sito completo in tutto e per tutto, per rendere notorevole la nostra discoteca, e ci siamo ispirate ai siti delle discoteche di Ibiza più famose del mondo.</P>
+  <P class="P">Tra le tante discoteche, di Bologna e non, anche alcune delle più celebri non possiedono un sito web, o comunque questo non si presenta molto curato o manca di alcuni servizi. I locali, infatti, sembrano utilizzare quasi esclusivamente le loro pagine social per quanto riguarda la promozione degli eventi e la comunicazione verso la clientela. Per questo motivo abbiamo deciso di creare un sito completo in tutto e per tutto, per dare notorietà alla nostra discoteca, e ci siamo ispirate ai siti delle discoteche di Ibiza più famose del mondo.</P>
 
   <P> 2. OBBIETTIVI COMUNICATIVI</P>
-  <P class="P">Il sito diventa un punto di riferimento, strumento utile sia per i frequentanti abituali della Dollhouse, per tenersi aggiornati sugli eventi, andare a riguardare le foto scattate in serata, acquistare il merchandising e visualizzare tutte le novità, avendo anche la possibilità di essere informati tramite email con l'iscrizione alla Newsletter, ma anche per chi non avesse mai visitato il locale e dovessse scegliere dove passare una serata: noi pensiamo che soprattutto in questa evenienza, un sito curato, bello da vedere, semplice da utilizzare, efficace nei servizi che offre, possa essere decisivo nella scelta tra questa, e le discoteche competitors.  </P>
+  <P class="P">Il sito diventa un punto di riferimento, strumento utile sia per i frequentanti abituali della Dollhouse, per tenersi aggiornati sugli eventi, andare a riguardare le foto scattate in serata, acquistare il merchandising e visualizzare tutte le novità, avendo anche la possibilità di essere informati tramite email con l'iscrizione alla Newsletter, ma anche per chi non avesse mai visitato il locale e dovesse scegliere dove passare una serata: noi pensiamo che soprattutto in questa evenienza, un sito curato, bello da vedere, semplice da utilizzare, efficace nei servizi che offre, possa essere decisivo nella scelta tra questa, e le discoteche competitors.  </P>
 
   <P> 3. TARGET AUDIENCE DEL MESSAGGIO</P>
   <P class="P">Il sito della Dollhouse si rivolge a un target primario che include i giovani dai 18 ai 30 anni, nello specifico appassionati del genere musicale techno, appassionati della vita notturna e del clubbing, alla ricerca di un locale nuovo e diverso dagli altri. 
     Per raggiungere questo target i social più efficace sono TikTok e Instagram, estremamente frequentati da giovani che rientrano in questa fascia d'età e capaci di mostrare agli utenti le fotografie e i video delle serate per attirarli. 
-    Il taget secondario sono le persone più adulte, dai 30 ai 40 anni, appassionati da sempre di Techno che cercano un modo per divertirsi e ascoltare ancora musica di qualità nonostante nella scena dei locali degli utilmi anni siano molto più diffuse discoteche commerciali per ragazzi e ragazze molto giovani. 
+    Il taget secondario sono le persone più adulte, dai 30 ai 40 anni, appassionati da sempre di Techno che cercano un modo per divertirsi e ascoltare ancora musica di qualità nonostante nella scena dei locali degli ultimi anni siano molto più diffuse discoteche commerciali per ragazzi e ragazze molto giovani. 
     Per raggiungere questo audience il social da utilizzare è Facebook, promuovendo serate dedicate a sottogeneri specifici della techno, come la techno degli anni '90.
     Il messaggio che si vuole far arrivare è che la Dollhouse è una discoteca che prende a cuore il divertimento di tutti, e svolge con serietà il suo compito di celebrare la Techno e liberarla dai soliti pregiudizi.</P>
 
   <P> 4. PROMOZIONE</P>
   <P class="P">Il sito web è stato promosso con la creazione di due pagine social, una su Instagram e una su TikTok, dove verrà fatta la presentazione della nuova discoteca e si potranno visualizzare gli aggiornamenti degli eventi. 
     Inoltre saranno pubblicizzati video e foto per attirare l'attenzione di nuovi clienti. 
-    Su Instagram abbiamo iniziato la sponsorizzazione tramite delle storie con lo scopo di creare hype e aspettative sui prossimi eventi senza fornire troope informazioni, mantenedo una sfera di mistero e attesa.
+    Su Instagram abbiamo iniziato la sponsorizzazione tramite delle storie con lo scopo di creare hype e aspettative sui prossimi eventi senza fornire troppe informazioni, mantenendo una sfera di mistero e attesa.
     Su Tiktok abbiamo pubblicizzato un video che mostra la gif della home.
   In tutti i social abbiamo linkato il sito, in modo che sia facilmente raggiungibile.</P>
 
@@ -352,13 +449,18 @@ Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che met
   </P>
 </section>
 
+</div>
+
+
 </text-section>
 
 
 
-
-
      
+
+
+
+
 
   <footer class="footer">
     <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
@@ -383,9 +485,16 @@ Il valore aggiuntivo del sito è la chiarezza e la comodità dei servizi che met
         
 
         <ul>
-       <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <li><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </li> 
       </ul>
+
+      <style>
+        #map {
+width: 100%;
+height: auto;
+}
+      </style>
 
   </footer>
 
