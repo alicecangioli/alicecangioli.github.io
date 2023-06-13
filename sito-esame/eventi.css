@@ -1,0 +1,231 @@
+
+body {
+  
+    background-image: url("img/dollgrande2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+background-color: black;
+color: white; /* opzionale: imposta il colore del testo su bianco per migliorare la leggibilità */
+}
+
+
+/* Aggiungi stili CSS per l'header */
+header {
+  background-color: black;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+
+}
+
+.logo {
+  width: 280px;
+  height: auto;
+}
+
+
+/* MENU NUOVO */
+
+.menu-toggle {
+  color:#851064;
+  font-size: 40px;
+  cursor: pointer;
+  position: sticky;
+}
+
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.menu.open .menu-items {
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.menu-items a {
+  color: #851064;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+
+.content-section {
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(168, 9, 149, 0.8);
+width: 100%;
+height: 100vh;
+}
+
+.text-section {
+width: 70%;
+padding: 0 20px;
+}
+
+.text-section h2 {
+font-size: 50px;
+}
+
+.text-section p {
+font-size: 23px;
+}
+
+.image-section {
+width: 50%;
+padding: 0 20px;
+text-align: center;
+}
+
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+
+
+  
+ /* MENU NUOVO */
+ 
+ 
+ .image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+/*1 */
+.container {
+  overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+
+  text-align: center; /* Centra orizzontalmente */
+
+  background-color: #522870;
+  
+  margin-bottom: 60px;
+  
+}
+
+
+
+.container img {
+  float: left !important; /* Fa galleggiare l'immagine a sinistra */
+  margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+}
+
+.container button {
+  margin: auto; /* Centra orizzontalmente e verticalmente */
+ 
+}
+
+#mybutton {
+
+  color:whitesmoke;
+  text-decoration-color: #bd319e; 
+  background-color: #522870; /* Colore di sfondo */
+ 
+
+  border: 3px solid #bd319e; /* Bordo con uno spessore di 1px */
+border-radius: 4px; /* Bordo arrotondato */
+
+  font-family: Arial, sans-serif; /* Tipo di carattere */
+  font-size: 16px; /* Dimensione del testo */
+
+  padding: 10px 20px; /* Spaziatura interna (padding) */
+}
+    
+
+#p1 {
+ padding-bottom: 20px; /* Aggiunge uno spazio sotto il paragrafo */
+}
+
+#mybutton {
+ margin-top: 20px; /* Aggiunge una spaziatura sopra il bottone */
+ /* Stili aggiuntivi per il bottone */
+}
+
+
+
+
+
+/*2 */
+.container2 {
+  margin-top: 60px;
+
+  overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+ 
+  text-align: center; /* Centra orizzontalmente */
+  background-color: #9d110a;
+
+  margin-bottom: 20px;
+}
+
+
+.container2 img {
+  float: right !important; /* Fa galleggiare l'immagine a DESTRA */
+  margin-left: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+
+}
+
+
+
+/*3 */
+.container3 {
+  margin-top: 60px;
+
+  overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
+
+  text-align: center; /* Centra orizzontalmente */
+
+  background-color: #292328;
+
+  margin-bottom: 60px;
+}
+
+.container3 img {
+  float: left !important; /* Fa galleggiare l'immagine a sinistra */
+  margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
+ 
+}
+
+
+
+.footer {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
