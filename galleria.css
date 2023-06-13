@@ -1,13 +1,20 @@
-h1 {
-  font-size: 450%;
-  color: #514e50;
-}
 
+
+h1 {
+  color: #851064; /* Colore viola */
+  font-size: 50px; /* Dimensione del carattere */
+  font-weight: 600; /* Carattere in grassetto */
+  margin-left: 20px;
+  text-align: center;
+  padding-top: 10PX;
+  padding-bottom: 5PX ;
+  font-family: Impact, Charcoal, sans-serif;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   body {
@@ -23,6 +30,8 @@ background-color: black;
     padding: 25px;
 
   }
+
+  
 
   .logo {
     width: 280px;
@@ -64,34 +73,8 @@ background-color: black;
 }
 
 
-.content-section {
-display: flex;
-align-items: center;
-justify-content: center;
-color: rgba(168, 9, 149, 0.8);
-width: 100%;
-height: 100vh;
-}
 
-.text-section {
-width: 70%;
-padding: 0 20px;
-}
 
-.text-section h2 {
-font-size: 50px;
-}
-
-.text-section p {
-font-size: 23px;
-}
-
-.image-section {
-width: 50%;
-padding: 0 20px;
-text-align: center;
-
-}
 
 
 @media (max-width: 768px) {
@@ -109,7 +92,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000;
+  color: #f70099;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -169,8 +152,12 @@ text-align: center;
 .image-section img {
 max-width: 100%;
 height: auto;
-}
 
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+
+}
  
 
 .section {
@@ -182,7 +169,7 @@ height: auto;
 .line {
   height: 1px;
   background-color: #ffffff;
-  margin: 10px 0;
+  margin: 0px 10;
 }
 
 .subtitle {
@@ -198,22 +185,24 @@ height: auto;
 
 .container {
   padding-top: 0%;
+  
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .section {
-    height: 300px; /* Altezza fissa della sezione */
+    height: 180px; /* Altezza fissa della sezione */
   width: 100%;
     padding: 20px;
     border-bottom: 0px solid #ccc;
+
 }
 
 .section:last-child {
     height: 300px; /* Altezza fissa della sezione */
   width: 100%;
-    border-bottom: none;
+    border-bottom: 40px;
   }
 
 
@@ -278,34 +267,34 @@ font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
 .footer {
 text-align: center;
 }
+
 .social-links {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  margin: 15px;
+  
   text-align: center !important;
 }
 
 .social-links li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
-.social-links a {
-  display: inline-block;
-  max-width: 100%;
-  width: 10px;
-  height: 10px;
-  font-size: 24px;
-  color: #000;
-  text-align: center !important;
-  line-height: 30px;
-  border-radius: 50%;
-  background-color:#3b1d32;
-  transition: background-color 0.3s ease;
-}
+.social-icon {
+    /* Stili di base */
+    font-size: 27px;
+    transition: color 0.3s; /* Transizione del colore */
+    color: #ffffff;
+  }
 
-.social-links a:hover {
-  background-color: #333;
-  color: #fff;
-}
+  .social-icon:hover {
+    /* Stili quando il mouse ci passa sopra */
+    color: rgb(179, 0, 255); /* Esempio: cambio colore in rosso */
+  }
+
+ 
+
+
+
 /*FOOTER*/

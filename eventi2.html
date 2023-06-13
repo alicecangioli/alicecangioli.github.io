@@ -4,12 +4,15 @@
 
 <head>
   <title>Doll House</title>
-  <link rel="icon" href="img/faccinaTOP.ico" type="image/x-icon">
+  <link rel="icon" href="img/faccinaTOP.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
   <meta charset="utf-8"> 
+
   <style>body {
     margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
  background-color: black;
  color: white; /* opzionale: imposta il colore del testo su bianco per migliorare la leggibilità */
 }
@@ -24,6 +27,7 @@
         margin-left: 20px;
         margin-bottom: 50px;
         margin-top: 10px;
+        font-family: Impact, Charcoal, sans-serif;
       }
 
 
@@ -44,6 +48,7 @@ body {
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
+      font-family: 'Roboto', sans-serif
     }
 
 .logo {
@@ -122,7 +127,7 @@ nav ul li {
   }
   
   nav ul li a {
-    color: #000;
+    color: #f70099;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -204,6 +209,7 @@ nav ul li {
 
  #p1 {
    padding-bottom: 20px; /* Aggiunge uno spazio sotto il paragrafo */
+   font-family: 'Roboto', sans-serif;
  }
 
 
@@ -252,6 +258,31 @@ nav ul li {
    
   }
   
+  .social-links {
+  list-style: none;
+  padding: 20px;
+  margin: 15px;
+  
+  text-align: center !important;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.social-icon {
+    /* Stili di base */
+    font-size: 27px;
+    transition: color 0.3s; /* Transizione del colore */
+    color: #ffffff;
+  }
+
+  .social-icon:hover {
+    /* Stili quando il mouse ci passa sopra */
+    color: rgb(179, 0, 255); /* Esempio: cambio colore in rosso */
+  }
+
 
   .footer {
       background-color: #440147;
@@ -268,6 +299,9 @@ nav ul li {
       menu.classList.toggle('open');
     }
 </script>
+
+<script src="https://kit.fontawesome.com/9f341f9f50.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -275,7 +309,7 @@ nav ul li {
   <header class="header">
 
     <a href="home.html">
-      <img class="logo" class="left-align" src="img/logo2.png" alt="Logo" >
+      <img class="logo" class="left-align" src="img/logoTOP.png" alt="Logo" >
       </a>
 
       
@@ -305,7 +339,7 @@ nav ul li {
 
       <div class="container">
       
-          <img src="img/evento1.jpeg" alt="immagine di una festa in discoteca"
+          <img src="img-gif/adrenaline.gif" alt="immagine di una festa in discoteca"
           width="50%"
           height="50%">
           
@@ -417,13 +451,43 @@ nav ul li {
 
 
 
-<footer class="footer">
-<p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
-<nav>
-  <ul>
+<div>
+  <footer class="footer">
+    <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+    <nav>
+      <ul>
+      
+        <li><a href="documentazione.html">Documentazione</a></li>
 
-    <li><a href="documentazione.html">Documentazione</a></li>
-</footer>
+      </ul>
+
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/tuapagina"><i class="fa-brands fa-facebook-f social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
+
+        <a href="https://www.tiktok.com/@club.dollhouse?_t=8d3O1FRiDsZ&_r=1" target="_blank"> <i class="fa-brands fa-tiktok social-icon" style="font-size: 27px; color: #fff;"></i></i></a>
+
+        <li><a href="https://instagram.com/club.dollhouse?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
+      </ul>
+
+
+       
+
+        
+
+        <ul>
+       <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </li> 
+      </ul>
+
+  </footer>
+</div>
+
+
+       
+
+        
+
+
 
 </body>
 </html>
