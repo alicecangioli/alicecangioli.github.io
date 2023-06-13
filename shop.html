@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSXKC5DM13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NSXKC5DM13');
+</script>
+
+
   <title>DOLL HOUSE</title>
   <link rel="icon" href="img/faccinaTOP.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -20,12 +32,20 @@ h1 {
     
     }
 
-   
+    body {
+      background-image: url("img/doll\ house\ scesa\ definita.svg");
+      
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+    }
 
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family:  'Roboto', sans-serif;
     }
     
     body {
@@ -124,17 +144,18 @@ nav ul li a:hover {
       align-items: center;
       width: 100%;
       flex-wrap: wrap; /* Per andare su più righe su schermi stretti */
+   
     }
 
     /* Stile per i quadrati dei prodotti */
       .product-square {
   width: 385px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid;
-  border-image: linear-gradient(to bottom right, #851064, #440147) 1;
+  border-image: linear-gradient(to bottom right, #310826, #440147) 1;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   flex-wrap: wrap; /* Per andare su più righe su schermi stretti */
 }
   
@@ -285,21 +306,23 @@ nav ul li a:hover {
     </nav>
   </header>
   <h1>DOLLHOUSE SHOP</h1>
+
+
   <div class="product-container">
     <div class="product-square">
      
-        <img src="immaginI/maglietta.jpeg" alt="maglietta" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta1.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>T-SHIRT</h3>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h3>T-SHIRT COME PLAY WITH US</h3>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "Come play with us", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/maglietta.jpeg" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
         </div>
       </div>
@@ -310,18 +333,18 @@ nav ul li a:hover {
 
     <div class="product-square">
  
-        <img src="immagini/felpa.png" alt="felpa" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta2.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>HOODIE</h3>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h3>T-SHIRT THINKING ABOUT YOU</h3>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "Thinking about you", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/felpa.png" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
         </div>
       </div>
@@ -329,18 +352,18 @@ nav ul li a:hover {
 
     <div class="product-square">
       
-        <img src="immagini/maglietta.jpeg" alt="ventaglio" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta3.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h3>VENTAGLIO</h3>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h3>T-SHIRT DEMONS</h3>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "Dance with your demons", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/ventaglio.PNG" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
       </div>
     </div>
@@ -348,18 +371,18 @@ nav ul li a:hover {
   <div class="product-container">
     <div class="product-square">
      
-        <img src="immaginI/maglietta.jpeg" alt="maglietta" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta4.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>T-SHIRT</h4>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h4>T-SHIRT VOODOO DOLLS</h4>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "Too many people not enough voodoo dolls", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/maglietta.jpeg" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
         </div>
       </div>
@@ -370,18 +393,18 @@ nav ul li a:hover {
 
     <div class="product-square">
  
-        <img src="immagini/felpa.png" alt="felpa" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta5.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>HOODIE</h4>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h4>T-SHIRT FUNERAL</h4>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "Play techno at my funeral", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/felpa.png" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
         </div>
       </div>
@@ -389,22 +412,24 @@ nav ul li a:hover {
 
     <div class="product-square">
       
-        <img src="immagini/maglietta.jpeg" alt="ventaglio" class="product-image" onclick="togglePopup()">
+        <img src="img/maglietta6.svg" alt="maglietta con scritta" class="product-image" onclick="togglePopup()">
       </a>
       <div class="product-description">
-        <h4>VENTAGLIO</h4>
-        <p>T-shirt manica corta da uomo - Gildan GN180
-          Composizione: 100% cotone (eccetto colori: grafite erica, erica zaffiro, oscuro erica)
+        <h4>T-SHIRT LITTLE PARTY</h4>
+        <p>T-shirt manica corta UNISEX. Scritta posteriore "A little party never killed nobody", logo nella parte anteriore.
+          Composizione: 100% cotone.
           Stile: vestibilità regolare.
           Scollo: rotondo.</p>
         <a class="product-button" href="https://www.amazon.it/ref=nav_logo">Acquista ora</a>
         <div id="popup-overlay" class="popup-overlay" onclick="togglePopup()">
           <div class="popup-content">
-            <img class="popup-image" src="immagini/ventaglio.PNG" alt="Popup Image">
+            <img class="popup-image" src="img/maglietta.svg" alt="Popup Image">
           </div>
       </div>
     </div>
   </div>
+
+
   
  <div>
     <footer class="footer">
