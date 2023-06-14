@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    background-image: url("img/doll\ house\ scesa\ definita.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+h1,
+h3,
+h4 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h1,
+h3 {
+    color: #851064;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: center;
+    padding-top: 10PX;
+    padding-bottom: 5PX;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h3.subtitle {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    color: #873c71;
+    font-size: 30px;
+}
+
+.header {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+
+@media (min-width: 769px) {
+
+    .header {
+        padding: 25px;
+    }
+
+    .logo {
+        width: 280px;
+        height: auto;
+    }
+}
+
+/* MENU NUOVO */
+.menu-toggle {
+    color: #851064;
+    font-size: 20px;
+    cursor: pointer;
+    position: sticky;
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        font-size: 40px;
+    }
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.menu.open .menu-items {
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #f70099;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Cambia lo stile al passaggio del mouse */
+nav ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.gif-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #440147;
+    color: white;
+    padding: 15px;
+    text-align: center !important;
+    max-width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 20px;
+    margin: 15px;
+    text-align: center !important;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.social-icon {
+    font-size: 27px;
+    transition: color 0.3s;
+    color: #ffffff;
+}
+
+.social-icon:hover {
+    color: rgb(179, 0, 255);
+}
+
+
+#map {
+    height: 200px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.image-section img {
+    max-width: 100%;
+}
+
+.colonna {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.colonna p {
+    padding: 0 20px;
+}
+
+@media (min-width: 769px) {
+
+    .colonna {
+        width: 50%;
+    }
+
+    .text-section {
+        display: flex;
+    }
+}
+
+.container {
+    text-align: center;
+    /* Centra orizzontalmente */
+    margin-bottom: 60px;
+    background-color: rgba(37,
+            11,
+            39,
+            0.5);
+    /* Imposta il colore di sfondo con trasparenza */
+    padding: 20px;
+}
+
+.container button {
+    margin: auto;
+    /* Centra orizzontalmente e verticalmente */
+}
+
+.container.invert .colonna:last-child {
+    order: -1;
+}
+
+.titolo-evento {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 48px;
+    color: #6e236f;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.data-evento {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    /* Aggiunge uno spazio sotto il paragrafo */
+    font-family: "Roboto", sans-serif;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #851064;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.product-button:hover {
+    transform: scale(1.1);
+}
+
+.product-button:hover span {
+    font-size: 20px;
+}

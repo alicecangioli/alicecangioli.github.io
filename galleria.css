@@ -1,125 +1,12 @@
 
 
-h1 {
-  color: #851064; /* Colore viola */
-  font-size: 50px; /* Dimensione del carattere */
-  font-weight: 600; /* Carattere in grassetto */
-  margin-left: 20px;
-  text-align: center;
-  padding-top: 10PX;
-  padding-bottom: 5PX ;
-  font-family: Impact, Charcoal, sans-serif;
-}
-
-@media (max-width: 768px) {
-  #map {
-    width: 100%;
-    height: 200px;
-  }
-  
-  @media (min-width: 769px) {
-  #map {
-    width: 100%;
-    height: 400px;
-  }
-}
-
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  body {
-background-color: black;
-}
-
-  .header {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-
-  }
-
-  
-
-  .logo {
-    width: 280px;
-    height: auto;
-  }
-
-  /* MENU NUOVO */
-
-.menu-toggle {
-  color:#851064;
-  font-size: 40px;
-  cursor: pointer;
-  position: sticky;
-}
-
-
-.menu-items {
-  display: none;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-.menu.open .menu-items {
-  display: flex;
-}
-
-.menu-items li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-.menu-items a {
-  color: #851064;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold; 
-}
 
 
 
 
 
 
-@media (max-width: 768px) {
-/* Stili per schermi fino a 768px di larghezza */
-}
 
-@media (max-width: 480px) {
-/* Stili per schermi fino a 480px di larghezza */
-}
-
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #f70099;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffffff; /* Cambia il colore al passaggio del mouse */
-  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
-}
-
-
-  
- /* MENU NUOVO */
 
 .content-section {
 display: flex;
@@ -130,27 +17,6 @@ width: 100%;
 height: 100vh;
 }
 
-.text-section {
-    width: 70%;
-    padding: 0 20px;
-    }
-
-
-  h3 {
-    font-size: 400%;
-    text-align: left;
-    color: white;
-  }
-
-
-  .text-section h2 {
-    font-size: 50px;
-    }
-    
-
-.text-section p {
-font-size: 23px;
-}
 
 .image-section {
   display: flex
@@ -175,10 +41,8 @@ height: auto;
 }
  
 
-.section {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0%;
+.subtitle-section {
+  margin-bottom: 50px;
 }
 
 .line {
@@ -187,38 +51,11 @@ height: auto;
   margin: 0px 10;
 }
 
-.subtitle {
-  font-size: 240%;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
- 
-}
 
 
 
 
-.container {
-  padding-top: 0%;
-  
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-.section {
-    height: 180px; /* Altezza fissa della sezione */
-  width: 100%;
-    padding: 20px;
-    border-bottom: 0px solid #ccc;
-
-}
-
-.section:last-child {
-    height: 300px; /* Altezza fissa della sezione */
-  width: 100%;
-    border-bottom: 40px;
-  }
 
 
 
@@ -243,81 +80,3 @@ height: auto;
 
   transform: scale(1.2);
 }
-
-
-
-  .footer {
-    max-width: 100%;
-    width: 100%;
-    background-color: #440147;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-
-  nav ul li {
-display: inline-block;
-margin-right: 10px;
-}
-
-nav ul li a {
-color: #000;
-text-decoration: none;
-transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-color: #ffffff; /* Cambia il colore al passaggio del mouse */
-font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
-}
-
-@media (max-width: 768px) {
-  /* Stili per schermi fino a 768px di larghezza */
-}
-
-@media (max-width: 480px) {
-  /* Stili per schermi fino a 480px di larghezza */
-}
-
-
-
-
-
-
-
-/*FOOTER*/
-
-.footer {
-text-align: center;
-}
-
-.social-links {
-  list-style: none;
-  padding: 20px;
-  margin: 15px;
-  
-  text-align: center !important;
-}
-
-.social-links li {
-  display: inline-block;
-  margin: 0 30px;
-}
-
-.social-icon {
-    /* Stili di base */
-    font-size: 27px;
-    transition: color 0.3s; /* Transizione del colore */
-    color: #ffffff;
-  }
-
-  .social-icon:hover {
-    /* Stili quando il mouse ci passa sopra */
-    color: rgb(179, 0, 255); /* Esempio: cambio colore in rosso */
-  }
-
- 
-
-
-
-/*FOOTER*/

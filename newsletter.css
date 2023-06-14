@@ -1,0 +1,39 @@
+.newsletter-box {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    background-color: #9f6ac4;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.newsletter-box h3 {
+    margin: 0 0 10px;
+}
+
+.newsletter-box form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-box input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #851064;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-box button {
+    padding: 10px 20px;
+    background-color: #440147;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.newsletter-box button:hover {
+    background-color: #555;
+}

@@ -1,533 +1,194 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSXKC5DM13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NSXKC5DM13');
-</script>
-
-
-  <title>DOLLHOUSE</title>
-  <link rel="icon" href="img/faccinaTOP.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  
-  <meta charset="utf-8"> 
-
-  <style>body {
-    margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
- background-color: black;
- color: white; /* opzionale: imposta il colore del testo su bianco per migliorare la leggibilità */
-}
-
-
-/* Aggiungi stili CSS per l'header */
-
-  h1 {
-        color: #851064; /* Colore viola */
-        font-size: 30px; /* Dimensione del carattere */
-        font-weight: 600; /* Carattere in grassetto */
-        margin-left: 20px;
-        margin-bottom: 50px;
-        margin-top: 10px;
-        font-family: Impact, Charcoal, sans-serif;
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NSXKC5DM13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
+      gtag("config", "G-NSXKC5DM13");
+    </script>
 
-header {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    
+    <title>DOLLHOUSE</title>
+    <link rel="icon" href="img/faccinaTOP.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-}
+    <meta charset="utf-8" />
 
-body {
-      background-image: url("img/doll\ house\ scesa\ definita.svg");
-      
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;
-      background-size: cover;
-      font-family: 'Roboto', sans-serif;
-      max-width: 100%;
-  
-  
-    }
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu");
+        menu.classList.toggle("open");
+      }
+    </script>
 
+    <script
+      src="https://kit.fontawesome.com/9f341f9f50.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-.logo {
-    width: 280px;
-    height: auto;
-  }
-
-
-/* MENU NUOVO */
-
-.menu-toggle {
-    color:#851064;
-    font-size: 40px;
-    cursor: pointer;
-    position: sticky;
-}
-
-
-.menu-items {
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu.open .menu-items {
-    display: flex;
-  }
-
-  .menu-items li {
-    list-style: none;
-    margin-bottom: 10px;
-  }
-
-  .menu-items a {
-    color: #851064;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold; 
-  }
-
-
-.content-section {
-display: flex;
-align-items: center;
-justify-content: center;
-color: rgba(0, 0, 0, 0.8);
-width: 100%;
-height: 100vh;
-overflow: hidden;
-}
-
-.text-section {
-  width: 70%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-
-.text-section h2 {
-  font-size: 50px;
-
-}
-
-.text-section p {
-  font-size: 23px;
-}
-
-.image-section {
-  width: 50%;
-  padding: 0 20px;
-  text-align: center;
-}
-
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #f70099;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffffff; /* Cambia il colore al passaggio del mouse */
-    font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
-  }
-  
-
-    
-   /* MENU NUOVO */
-   
-   
-   .image-section img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-  h1 {
-      color: #851064; /* Colore viola */
-      font-size: 50px; /* Dimensione del carattere */
-      font-weight: 600; /* Carattere in grassetto */
-      margin-left: 20px;
-      text-align: center;
-      padding-top: 30PX;
-      padding-bottom: 40PX ;
-    }
-
-    .centered {
-    text-align: center;
-  } 
-
-
-/*1 */
-.container {
-    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
-    text-align: center; /* Centra orizzontalmente */
-    margin-bottom: 60px;
-    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-
-    height: 40%;
-    padding: 20px;
-   
-   
- 
-  }
-
-  .container img {
-    float: left !important; /* Fa galleggiare l'immagine a sinistra */
-    margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
-    overflow: auto;
-  }
-
-  .container button {
-    margin: auto; /* Centra orizzontalmente e verticalmente */
-   
-  }
-
-  .product-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #851064;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 20px;
-      margin-top: 10px;
-      transition: transform 0.3s;
-
-    }
-
-    .product-button:hover {
-      transform: scale(1.1);
-    }
-    
-    .product-button:hover span {
-      font-size: 20px;
-    }
-      
-
- #p1 {
-   padding-top: 30px;
-  padding-bottom: 10px; /* Aggiunge uno spazio sotto il paragrafo */
-   font-family: 'Roboto', sans-serif;
- }
-
-
-
- 
-  
-  
-
-  /*2 */
-  .container2 {
-    margin-bottom: 20px;
-    overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
-    text-align: center; /* Centra orizzontalmente */
-    margin-bottom: 60px;
-    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-   
-    height: 40%;
-    padding: 20px;
- 
-   
-  }
-  
-  
-  .container2 img {
-    float: right !important; /* Fa galleggiare l'immagine a DESTRA */
-    margin-left: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
-    overflow: hidden;
-
-  }
-
-  
-  
-  /*3 */
-.container3 {
-  overflow: hidden; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
-    text-align: center; /* Centra orizzontalmente */
-    margin-bottom: 60px;
-    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
-    height: 40%;
-    padding: 20px;
-
- 
-  }
-  
-  .container3 img {
-    float: left !important; /* Fa galleggiare l'immagine a sinistra */
-    margin-right: 45px; /* Aggiunge uno spazio tra l'immagine e il testo */
-    overflow: auto;
-   
-  }
-  
-  .social-links {
-  list-style: none;
-  padding: 20px;
-  margin: 15px;
-  
-  text-align: center !important;
-}
-
-.social-links li {
-  display: inline-block;
-  margin: 0 30px;
-}
-
-.social-icon {
-    /* Stili di base */
-    font-size: 27px;
-    transition: color 0.3s; /* Transizione del colore */
-    color: #ffffff;
-  }
-
-  .social-icon:hover {
-    /* Stili quando il mouse ci passa sopra */
-    color: rgb(179, 0, 255); /* Esempio: cambio colore in rosso */
-  }
-
-
-  .footer {
-      background-color: #440147;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-  </style>
-  <script>
-    function toggleMenu() {
-      const menu = document.querySelector('.menu');
-      menu.classList.toggle('open');
-    }
-</script>
-
-<script src="https://kit.fontawesome.com/9f341f9f50.js" crossorigin="anonymous"></script>
-
-</head>
-
-
-<body>
-  <header class="header">
-
-    <a href="index.html">
-      <img class="logo" class="left-align" src="img/logoTOP.png" alt="Logo" >
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="logo" class="left-align" src="img/logoTOP.png" alt="Logo" />
       </a>
-
-      
-    
-    <nav class="menu">
-      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <ul class="menu-items">
-        <li><a class="whitelink nounderline" href="index.html">HOME</a></li>
-        <li><a class="active nounderline" href="eventi2.html">EVENTI</a></li>
-        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
-        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
-    
+          <li><a class="active nounderline" href="index.html">HOME</a></li>
+          <li>
+            <a class="whitelink nounderline" href="eventi2.html">EVENTI</a>
+          </li>
+          <li>
+            <a class="whitelink nounderline" href="galleria.html">GALLERIA</a>
+          </li>
+          <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
         </ul>
-      
-    </nav>
-  </header>
+      </nav>
+    </header>
 
- 
-  <h1> DOLLHOUSE EVENTI </h1> 
-
-
-
-   
+    <h1>DOLLHOUSE EVENTI</h1>
 
     <main>
+      <div class="container text-section">
+        <div class="colonna">
+          <section class="image-section">
+            <img src="img-gif/adrenaline.gif" alt="locandina evento" />
+          </section>
+        </div>
+        <div class="colonna">
+          <h2 class="titolo-evento">ADRENALINE OVERLOAD</h2>
+          <p class="data-evento">Venerdì 14 Luglio 2023</p>
 
+          <p>Immergiti nel vortice d’energia della musica HARDCORE.</p>
 
-      <div class="container">
-      
-          <img src="img-gif/adrenaline.gif" alt="locandina evento"
-          width="50%"
-          height="50%">
-          
+          <p>Doors Open @ 23:30</p>
+          <p>Evento riservato a una clientela +18</p>
 
-<h2 class="impact-font">ADRENALINE OVERLOAD</h2> 
-<p id="p1">
-     Venerdì 14 Luglio 2023 </p>
-
-    <P> Immergiti nel vortice d’energia della musica HARDCORE. </p>
-
-<p> Doors Open @ 23:30 </p>
-<p>Evento riservato a una clientela +18</p>
-
-
-  <style>
-    .impact-font {
-      font-family: Impact, Charcoal, sans-serif;
-      font-size: 48px;
-      color: #6e236f;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-  </style>
-
- 
-
-
-  <a href="https://www.ticketsms.it">
-    <a class="product-button" href="https://www.ticketsms.it">Acquista ticket</a>
-  
-
-</p>
-
- </div>
-
-
-
-      <div class="container2">
-      
-        <img src="img-gif/VOODOOGIF.01.gif" alt="locandina evento"
-        width="50%"
-        height="50%">
-
-
-        <h2 class="impact-font">VOODOO</h2> 
-        <p id="p1">
-            SABATO 15 Luglio 2023 </p>
-            <p> Vivi la magia, lascia che la musica ti torturi.</p> 
-            
-            <p>Ritornano i nostri Sabato VOODOO, lasciati stupire dai nostri dj resident e GUEST</p>
-            
-            <p>Doors Open @ 23:30</p>
-            <p>Evento riservato a una clientela +18</p>
-
-
-  
-
-<a href="https://www.ticketsms.it">
-  <a class="product-button" href="https://www.ticketsms.it">Acquista ticket</a>
-</p>
-</a>
+          <a class="product-button" href="https://www.ticketsms.it"
+            >Acquista ticket</a
+          >
+        </div>
       </div>
 
+      <div class="container invert text-section">
+        <div class="colonna">
+          <section class="image-section">
+            <img
+              src="img-gif/VOODOOGIF.01.gif"
+              alt="locandina evento"
+            />
+          </section>
+        </div>
+        <div class="colonna">
+          <h2 class="titolo-evento">VOODOO</h2>
+          <p class="data-evento">SABATO 15 Luglio 2023</p>
+          <p>Vivi la magia, lascia che la musica ti torturi.</p>
 
+          <p>
+            Ritornano i nostri Sabato VOODOO, lasciati stupire dai nostri dj
+            resident e GUEST
+          </p>
 
+          <p>Doors Open @ 23:30</p>
+          <p>Evento riservato a una clientela +18</p>
 
+          <a class="product-button" href="https://www.ticketsms.it"
+            >Acquista ticket</a
+          >
+        </div>
+      </div>
 
+      <div class="container text-section">
+        <div class="colonna">
+          <section class="image-section">
+            <img
+              src="img-gif/BUNKER.gif"
+              alt="locandina evento"
+            />
+          </section>
+        </div>
+        <div class="colonna">
+          <h2 class="titolo-evento">TECHNO BUNKER</h2>
+          <p class="data-evento">DOMENICA 16 Luglio 2023</p>
+          <p>Fatti trasportare dai ritmi underground in un party NON STOP.</p>
 
-<div class="container3">
-      
-  <img src="img-gif/BUNKER.gif" alt="locandina evento"
-  width="50%"
-  height="50%">
+          <p>
+            Scopri il nostro after che parte con il tramonto, e termina quando
+            il sole sorge.
+          </p>
 
-      
+          <p>Doors Open @ 23:00</p>
+          <p>Evento riservato a una clientela +18</p>
+          <a class="product-button" href="https://www.ticketsms.it"
+            >Acquista ticket</a
+          >
+        </div>
+      </div>
+    </main>
 
-  <h2 class="impact-font">TECHNO BUNKER</h2> 
-  <p id="p1">
-      DOMENICA 16 Luglio 2023 </p>
-      <p> Fatti trasportare dai ritmi underground in un party NON STOP.</p> 
-      
-      <p>Scopri il nostro after che parte con il tramonto, e termina quando il sole sorge.</p>
-      
-      <p>Doors Open @ 23:00</p>
-      <p>Evento riservato a una clientela +18</p>
-
-
-
-
-
-
-
-<style>
-  p {
-    padding-bottom: 10px; /* Aggiunge uno spazio sotto il paragrafo */
-  }
-
-  button {
-    margin-top: 10px; /* Aggiunge una spaziatura sopra il bottone */
-    /* Stili aggiuntivi per il bottone */
-  }
-</style>
-
-  <a class="product-button" href="https://www.ticketsms.it">Acquista ticket</a>
-</a>
-</p>
-
-</div>
-
-</body>
-</html>
-  </div>
-
-
-
-
-
-<div>
-  <footer class="footer">
-    <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
-    <nav>
-      <ul>
-      
-        <li><a href="documentazione.html">Documentazione</a></li>
-
-      </ul>
+    <footer class="footer">
+      <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+      <nav>
+        <ul>
+          <li><a href="documentazione.html">Documentazione</a></li>
+        </ul>
+      </nav>
 
       <ul class="social-links">
-        <li><a href="https://www.facebook.com/tuapagina"><i class="fa-brands fa-facebook-f social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
+        <li>
+          <a href="https://www.facebook.com/tuapagina"
+            ><i
+              class="fa-brands fa-facebook-f social-icon"
+              style="font-size: 27px; color: #fff"
+            ></i
+          ></a>
+        </li>
 
-        <a href="https://www.tiktok.com/@club.dollhouse?_t=8d3O1FRiDsZ&_r=1" target="_blank"> <i class="fa-brands fa-tiktok social-icon" style="font-size: 27px; color: #fff;"></i></i></a>
+        <li>
+          <a
+            href="https://www.tiktok.com/@club.dollhouse?_t=8d3O1FRiDsZ&_r=1"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-tiktok social-icon"
+              style="font-size: 27px; color: #fff"
+            ></i
+          ></a>
+        </li>
 
-        <li><a href="https://instagram.com/club.dollhouse?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram social-icon" style="font-size: 27px; color: #fff;"></i></a></li>
+        <li>
+          <a href="https://instagram.com/club.dollhouse?igshid=OGQ5ZDc2ODk2ZA=="
+            ><i
+              class="fa-brands fa-instagram social-icon"
+              style="font-size: 27px; color: #fff"
+            ></i
+          ></a>
+        </li>
       </ul>
 
-
-       
-
-        
-
-        <ul>
-       <li><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit" width="1200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </li> 
-      </ul>
-
-      <style>
-        #map {
-width: 100%;
-height: auto;
-}
-      </style>
-
-
-  </footer>
-</div>
-
-
-       
-
-        
-
-
-
-</body>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.780052952383!2d11.293616976431135!3d44.51965837107425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd3f0c689b0f5%3A0x4c393b91a7cc95cd!2sVia%20della%20Berleta%2C%2040132%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1686390715208!5m2!1sit!2sit"
+        width="1200"
+        height="100"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
 </html>
-  </div>
